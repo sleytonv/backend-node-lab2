@@ -34,4 +34,5 @@ COPY --from=build /app/dist ./dist
 # Buenas prácticas
 USER node
 EXPOSE 3000
-CMD ["npm","start"]
+CMD ["node", "dist/main.js"]
+
